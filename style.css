@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,600&family=Open+Sans:ital,wght@1,300&family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    background:linear-gradient(rgb(0, 0, 51),rgb(11, 98, 185));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 50px 0 80px;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 6px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 7px 12px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+nav ul li a:hover,nav ul li a.active{
+    background-color: rgb(101, 101, 206);
+}
+#click{
+    display: none;
+}
+.menu-btn{
+    color: aliceblue;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+/* header section code start */
+header{
+    width: 100%;
+    height: 90vh;
+    background-image: url(responsive.img/image-17.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+/* responsive work start */
+@media only screen and (max-width: 940px){
+    nav ul{
+        position: fixed;
+        background-color: rgb(6, 6, 61);
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.5s ease-in;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+    nav ul li a:hover,nav ul li a.active{
+        color: red;
+        background: none;
+    }
+    #click:checked~ul{
+        left: 0%;
+    }
+    #click:checked~.menu-btn i::before{
+        content: "\f00d";
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+
+/* header part start */
