@@ -192,6 +192,60 @@ header{
 .about-box p{
     font-weight: bold;
 }
+/* fourth section code start */
+#fourth-section{
+    background-color:  rgb(46, 46, 165);
+    padding: 100px 0;
+    color: #fff;
+}
+.advice-parent{
+    display: flex;
+    gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.advice-items h4{
+    margin: 10px 0;
+}
+.advice-image{
+   width: 500px;
+}
+.advice-image img{
+    width: 100%;
+}
+ .advice-items p{
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: justify;
+ }
+ .advice-items h3{
+    font-size: 25px;
+    border-bottom: 3px solid red;
+    padding-bottom: 20px;
+ }
+ .advice-items a{
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+    border: 2px solid black;
+
+ }
+ .advice-icon{
+    text-align: center;
+ }
+ .advice-icon a{
+    margin: 0 5px;
+ }
+ .advice-items a:hover{
+    background-color: rgb(143, 131, 118);
+ }
 
 
 /* responsive work start */
@@ -252,6 +306,7 @@ header{
     /* third section of main tag media quary code start */
     .about-parent{
         display: block;
+        align-items: center;
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -265,7 +320,25 @@ header{
     .about-box{
         margin-bottom: 20px;
     }
-
+    /* third section code finished */
+    /* advice section code start */
+    .advice-parent{
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .advice-image{
+        width: 100%;
+     }
+     .advice-icon{
+        text-align: left;
+     }
+     .advice-icon a{
+        margin: 10px 5px;
+     }
+     .advice-items h3{
+        margin-top: 50px;
+     }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 1099px) {
@@ -281,6 +354,7 @@ header{
        .smart-parent{
         margin-left: 70px;
         margin-right: 70px;
+        align-items: center;
         display: block;
     }
     .smart-img{
@@ -291,6 +365,7 @@ header{
       /* third section of main tag media quary code start */
     .about-parent{
         display: block;
+        align-items: center;
         margin-left: 70px;
         margin-right: 70px;
     }
@@ -304,4 +379,22 @@ header{
     .about-box{
         margin-bottom: 40px;
     }
+    /* third section code finished */
+    /* advice section code start */
+    .advice-parent{
+        display: flex;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .advice-image{
+        width: 100%;
+     }
+     .advice-icon{
+        text-align: center;
+     }
+     .advice-icon a{
+        margin: 10px 5px;
+     }
+    /* advice section code fenished */
+
 }
